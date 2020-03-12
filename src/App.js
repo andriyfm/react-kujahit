@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
-import Mailbox from "./components/Mailbox";
+import { FormComments } from "./components/basics/Forms";
 
 function App() {
-  const [messages] = React.useState(["unread 1", "unread2", "unread3"]);
+  const numbers = [1, 24, 41, 4];
   return (
     <div className="App">
       <header className="App-header">
-        <Mailbox messages={messages} />
+        <h1>Forms</h1>
+        <FormComments />
       </header>
     </div>
   );

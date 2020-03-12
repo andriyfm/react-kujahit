@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-
-import { FormLogin } from "./components/basics/Formss/Forms";
+import LoginControl from "./components/LoginControl";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FormLogin />
+        <LoginControl />
       </header>
     </div>
   );

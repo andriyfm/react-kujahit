@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import LoginControl from "./components/LoginControl";
+import Mailbox from "./components/Mailbox";
 
 function App() {
+  const [messages] = React.useState(["unread 1", "unread2", "unread3"]);
   return (
     <div className="App">
       <header className="App-header">
-        <LoginControl />
+        <Mailbox messages={messages} />
       </header>
     </div>
   );

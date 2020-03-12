@@ -148,3 +148,48 @@ export const FormResetPassword = props => {
     </form>
   );
 };
+
+/**
+ * Form Comments
+ * @param {*} props
+ */
+export const FormComments = props => {
+  const [name, setName] = useState("Jhone Doe");
+  const [comments, setComments] = useState(
+    "Aute consequat minim deserunt ea duis elit duis ipsum sunt sint"
+  );
+  const [isAgree, setIsAgree] = useState("no");
+
+  const handleSubmit = e => {
+    console.log({ name, comments, isAgree });
+  };
+
+  return (
+    <div>
+      <div>
+        <label>Name</label>
+        <input
+          type="text"
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Comments</label>
+        <textarea
+          value={comments}
+          onChange={e => setComments(e.target.value)}
+        ></textarea>
+      </div>
+      <div>
+        <select value={isAgree} onChange={e => setIsAgree(e.target.value)}>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
+    </div>
+  );
+};

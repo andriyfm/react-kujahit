@@ -2,32 +2,39 @@ import React from "react";
 import "./App.css";
 
 import { ThemeContext, themes } from "./contexts/ThemeContext";
-import ThemedButton from "./components/ThemedButton";
-
-function Toolbar(props) {
-  return <ThemedButton onClick={props.changeTheme}>Change Theme</ThemedButton>;
-}
+import ThemeTogglerButton from "./components/ThemeTogglerButton";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { theme: themes.light };
+
     this.toggleTheme = () => {
       this.setState(state => ({
         theme: state.theme === themes.dark ? themes.light : themes.dark
       }));
     };
+
+    this.state = {
+      theme: themes.light,
+      toggleTheme: this.toggleTheme
+    };
   }
 
   render() {
+    // The entire state is passed to the provider
     return (
-      <header class="App-header">
-        <ThemeContext.Provider value={this.state.theme}>
-          <Toolbar changeTheme={this.toggleTheme} />
-        </ThemeContext.Provider>
-      </header>
+      <ThemeContext.Provider value={this.state}>
+        <Content />
+      </ThemeContext.Provider>
     );
   }
 }
 
+function Content() {
+  return (
+    <div>
+      <ThemeTogglerButton />
+    </div>
+  );
+}
 export default App;

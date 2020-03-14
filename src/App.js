@@ -1,39 +1,54 @@
 import React from "react";
 import "./App.css";
-import { FormComments } from "./components/basics/Forms";
 
-function App() {
-  const numbers = [1, 24, 41, 4];
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Forms</h1>
-        <FormComments />
-      </header>
-    </div>
-  );
-  import React, { Suspense } from "react";
-  import "./App.css";
-  import { FormComments } from "./components/basics/Forms";
+const ThemeContext = React.createContext({ color: "light" });
+const UserContext = React.createContext("andri");
 
-  const OtherComponent = React.lazy(() =>
-    import("./components/OtherComponent")
-  );
-
-  function App() {
+class App extends React.Component {
+  render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Forms</h1>
-          <Suspense fallback={<div style={{ color: "white" }}>Loading...</div>}>
-            <OtherComponent />
-          </Suspense>
-        </header>
+      <header class="App-header">
+        <ThemeContext.Provider value={{ color: "red" }}>
+          <UserContext.Provider value="firmansyah">
+            <Toolbar />
+          </UserContext.Provider>
+        </ThemeContext.Provider>
+      </header>
+    );
+  }
+}
+
+class ThemeButton extends React.Component {
+  static contextType = UserContext;
+
+  render() {
+    // return <button>Button {this.context}</button>;
+    return (
+      <div>
+        <ThemeContext.Consumer>
+          {themeValue => (
+            <div>
+              <UserContext.Consumer>
+                {value => (
+                  <h1>
+                    {value} - {themeValue.color}
+                  </h1>
+                )}
+              </UserContext.Consumer>
+            </div>
+          )}
+        </ThemeContext.Consumer>
       </div>
     );
   }
+}
 
-  export default App;
+function Toolbar(props) {
+  return (
+    <div>
+      <ThemeButton />
+    </div>
+  );
 }
 
 export default App;

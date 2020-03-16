@@ -1,0 +1,12 @@
+.footer {
+  &__bottom {
+    background-color: $navy-dark;
+    padding: $spacer 0;
+
+    &-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

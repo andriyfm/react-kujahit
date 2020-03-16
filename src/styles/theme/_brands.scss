@@ -1,0 +1,14 @@
+.brands {
+  background-color: $white;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+.about {
+  padding: 3rem 0;
+  background-color: #1e1e1e;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $light-color-3;
+    line-height: 1.8;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+}

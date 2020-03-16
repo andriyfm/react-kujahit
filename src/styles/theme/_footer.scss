@@ -1,6 +1,27 @@
 .footer {
+  &__top {
+    padding: 5rem 0;
+    background-color: #252525;
+
+    &-title {
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    &-description {
+      color: $secondary;
+      margin: 0 0 1.5rem;
+    }
+
+    &-copyright {
+      font-size: $font-size-sm;
+      color: $secondary;
+      margin: 0;
+    }
+  }
+
   &__bottom {
-    background-color: $navy-dark;
+    background-color: #1e1e1e;
     padding: $spacer 0;
 
     &-icons {

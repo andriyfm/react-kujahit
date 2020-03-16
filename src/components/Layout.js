@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { FooterBottom } from "./Footer";
+import { FooterTop, FooterBottom } from "./Footer";
 
 const Layout = props => {
   return (
@@ -10,6 +10,7 @@ const Layout = props => {
       </header>
       <main>{props.children}</main>
       <footer>
+        <FooterTop />
         <FooterBottom />
       </footer>
     </Fragment>

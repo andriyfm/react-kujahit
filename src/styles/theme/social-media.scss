@@ -1,0 +1,19 @@
+.social-media {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: $light-color-3;
+    }
+  }
+}

@@ -1,8 +1,7 @@
 import React from "react";
-import "./App.css";
-
 import { ThemeContext, themes } from "./contexts/ThemeContext";
-import ThemeTogglerButton from "./components/ThemeTogglerButton";
+import ShortcodePages from "./pages/ShortcodesPage";
+import "./styles/main.scss";
 
 class App extends React.Component {
   constructor(props) {
@@ -21,20 +20,12 @@ class App extends React.Component {
   }
 
   render() {
-    // The entire state is passed to the provider
     return (
       <ThemeContext.Provider value={this.state}>
-        <Content />
+        <ShortcodePages />
       </ThemeContext.Provider>
     );
   }
 }
 
-function Content() {
-  return (
-    <div>
-      <ThemeTogglerButton />
-    </div>
-  );
-}
 export default App;

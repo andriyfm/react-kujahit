@@ -1,7 +1,7 @@
 import React from "react";
 
 import Headings from "../components/shortcodes/Headings";
-import Rows from "../components/shortcodes/Rows";
+import Grids from "../components/shortcodes/Grids";
 import Buttons from "../components/shortcodes/Buttons";
 
 const ShortcodePages = props => {
@@ -9,7 +9,7 @@ const ShortcodePages = props => {
     <>
       <Headings />
       <Buttons />
-      <Rows />
+      <Grids />
     </>
   );
 };

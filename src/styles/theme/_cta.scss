@@ -1,0 +1,33 @@
+.cta {
+  padding: 3rem 0;
+  background-color: #bfa16b;
+
+  &__wrapper-message {
+    text-align: left;
+    @media (max-width: $bp-sm) {
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  &__wrapper-button {
+    text-align: right;
+    @media (max-width: $bp-sm) {
+      text-align: center;
+    }
+  }
+
+  &__message {
+    color: $white;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__button {
+    background-color: $dark;
+    color: $white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding: 1rem 1.75rem;
+  }
+}

@@ -6,10 +6,12 @@ import FeatureProducts from "../components/FeatureProducts";
 import CompanyInfo from "../components/CompanyInfo";
 import Brands from "../components/Brands";
 import ProductCategory from "../components/ProductCategory";
+import Hero from "../components/Hero";
 
 const Home = props => {
   return (
     <Layout>
+      <Hero />
       <About />
       <FeatureProducts />
       <ProductCategory />

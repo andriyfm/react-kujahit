@@ -1,0 +1,48 @@
+.product-category {
+  padding: 5rem 0;
+  background-image: url("../../assets/images/img1.jpg");
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &__cover {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 1rem;
+    background-color: #1e1e1e;
+    border: solid 1px transparent;
+    border-radius: $border-radius;
+    transition: border 100ms ease-in-out;
+
+    &:hover {
+      border: solid 1px $light-color;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $light-color;
+    }
+
+    &__desc {
+      font-size: 0.9rem;
+      color: $light-color-3;
+      margin: 0;
+    }
+  }
+}

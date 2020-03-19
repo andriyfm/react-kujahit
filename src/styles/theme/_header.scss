@@ -1,0 +1,64 @@
+.header {
+  &__top {
+    padding: 15px 0;
+    background-color: #1e1e1e;
+    font-size: 0.9rem;
+    color: $light-color-3;
+  }
+
+  &__middle {
+    padding: 15px 0;
+
+    &-search {
+      background: #1e1e1e;
+      border-color: $light-color-3;
+      color: $light-color;
+      font-family: $font-family-base;
+
+      &:focus {
+        background-color: #1e1e1e;
+        border-color: $light-color-3;
+        box-shadow: 0 0 0 0.2rem rgba(242, 202, 126, 0.1);
+        color: $light-color;
+      }
+    }
+
+    &-search-append {
+      background-color: $dark;
+      color: unset;
+      border-color: $light-color-3;
+    }
+
+    &-price {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    &-notif {
+      display: inline-block;
+      position: relative;
+      margin-right: 15px;
+
+      &-length {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 22px;
+        height: 22px;
+        background-color: red;
+        font-size: 0.5rem;
+        color: white;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 15px 0;
+    background-color: #1e1e1e;
+    border-color: $light-color-3;
+  }
+}

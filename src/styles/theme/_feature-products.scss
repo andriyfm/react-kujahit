@@ -1,0 +1,49 @@
+.feature-products {
+  padding: 3rem 0;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    color: #bf8d50;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 3rem;
+  }
+
+  &__item {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    &:hover {
+      outline: 1px solid $light-color-3;
+    }
+
+    &-thumbnail {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: $border-radius;
+      margin-bottom: 1rem;
+    }
+
+    &-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    &-price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: $light-color-3;
+    }
+  }
+}

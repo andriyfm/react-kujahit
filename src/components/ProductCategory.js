@@ -9,19 +9,19 @@ const ProductCategory = props => {
     <section className="product-category">
       <Container>
         <Row>
-          <Col md={4} sm={6}>
+          <Col md={4} sm={12} className="d-none d-md-block">
             <img
               className="product-category__cover"
               src={require("../assets/images/img1.jpg")}
               alt="product-category-cover"
             />
           </Col>
-          <Col md={8} sm={10}>
+          <Col md={8} sm={12}>
             <div className="product-category__list">
               <Row>
                 {categories.map((item, i) => {
                   return (
-                    <Col key={i} md={6}>
+                    <Col key={i} xs={6}>
                       <div className="product-category__list-item">
                         <h3 className="product-category__list-item__title">
                           top 10 coat

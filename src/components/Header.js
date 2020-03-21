@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
 import SocialMedia from "./SocialMedia";
+import CartAndBalance from "./CartAndBalance";
 
 export const Top = props => {
   return (
     <div className="header__top">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={6}>
-            <div className="d-flex justify-content-start">
+            <div className="d-flex justify-content-between justify-content-md-start">
               <div className="mr-5">
                 <FontAwesomeIcon className="mr-2" icon="phone" />
                 +6285974492535
@@ -20,10 +21,10 @@ export const Top = props => {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="d-none d-md-block">
             <div className="d-flex justify-content-end">
               <div>
-                <FontAwesomeIcon className="mr-2" icon="us" />
+                <FontAwesomeIcon className="mr-2" icon="flag" />
                 English
               </div>
               <div className="ml-4">
@@ -42,7 +43,7 @@ export const Middle = props => {
     <div className="header__middle">
       <Container>
         <Row className="align-items-center">
-          <Col md={6} className="text-left">
+          <Col md={6} sm={12} className="text-left">
             <InputGroup>
               <FormControl
                 className="header__middle-search"
@@ -56,14 +57,8 @@ export const Middle = props => {
               </InputGroup.Append>
             </InputGroup>
           </Col>
-          <Col md={6} className="text-right">
-            <div className="header__middle-price">
-              <div className="header__middle-notif">
-                <FontAwesomeIcon icon="shopping-cart" />
-                <div className="header__middle-notif-length">+99</div>
-              </div>
-              <span>$330.99</span>
-            </div>
+          <Col md={6} className="text-right d-none d-md-block">
+            <CartAndBalance />
           </Col>
         </Row>
       </Container>
@@ -107,15 +102,17 @@ export const Bottom = props => {
     }
   ]);
   return (
-    <div className="header__bottom">
-      <nav className="header__bottom-navbar">
-        {pages.map(page => (
-          // eslint-disable-next-line jsx-a11y/anchor-is-valid
-          <a className="header__bottom-navbar_item" href="#" key={page.id}>
-            {page.name}
-          </a>
-        ))}
-      </nav>
+    <div className="header__bottom d-none d-md-block">
+      <Container>
+        <nav className="header__bottom-navbar">
+          {pages.map(page => (
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+            <a className="header__bottom-navbar_item" href="#" key={page.id}>
+              {page.name}
+            </a>
+          ))}
+        </nav>
+      </Container>
     </div>
   );
 };

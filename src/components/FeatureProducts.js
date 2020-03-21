@@ -22,7 +22,7 @@ export const SectionBody = props => {
       <Container>
         <Row>
           {products.map((product, i) => (
-            <Col lg={3} key={i}>
+            <Col md={3} xs={6} key={i}>
               <div className="feature-products__item">
                 <img
                   className="feature-products__item-thumbnail"

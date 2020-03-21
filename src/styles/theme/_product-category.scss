@@ -1,6 +1,6 @@
 .product-category {
   padding: 5rem 0;
-  background-image: url("../../assets/images/img1.jpg");
+  background-image: url("../../assets/images/img2.jpg");
   background-position: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,9 +10,7 @@
     object-fit: cover;
     width: 100%;
     height: auto;
-  }
-
-  &__list {
+    border-radius: $border-radius;
   }
 
   &__list-item {

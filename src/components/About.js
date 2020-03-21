@@ -7,7 +7,7 @@ const About = props => {
     <section className="about">
       <Container>
         <Row>
-          <Col lg={7}>
+          <Col md={7} className="mb-sm-4">
             <h2 className="about__title">about us</h2>
             <p className="about__text">
               Mollit qui enim aliquip tempor. Commodo ut in excepteur cupidatat
@@ -22,7 +22,7 @@ const About = props => {
             </p>
             <SocialMedia />
           </Col>
-          <Col lg={5}>
+          <Col md={5}>
             <img
               className="about__thumbnail"
               src={require("../assets/images/img1.jpg")}

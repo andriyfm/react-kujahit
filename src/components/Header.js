@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
+import SocialMedia from "./SocialMedia";
 
 export const Top = props => {
   return (
@@ -22,12 +23,11 @@ export const Top = props => {
           <Col md={6}>
             <div className="d-flex justify-content-end">
               <div>
-                <FontAwesomeIcon className="mr-2" icon="phone" />
-                +6285974492535
+                <FontAwesomeIcon className="mr-2" icon="us" />
+                English
               </div>
-              <div className="ml-5">
-                <FontAwesomeIcon className="mr-2" icon="envelope" />
-                user@domain.com
+              <div className="ml-4">
+                <SocialMedia />
               </div>
             </div>
           </Col>
@@ -72,7 +72,52 @@ export const Middle = props => {
 };
 
 export const Bottom = props => {
-  return <div className="header__bottom">header bottom</div>;
+  const [pages] = useState([
+    {
+      id: "1",
+      name: "home"
+    },
+    {
+      id: "2",
+      name: "about"
+    },
+    {
+      id: "3",
+      name: "woman"
+    },
+    {
+      id: "4",
+      name: "men"
+    },
+    {
+      id: "5",
+      name: "accessories"
+    },
+    {
+      id: "6",
+      name: "blog"
+    },
+    {
+      id: "7",
+      name: "contact"
+    },
+    {
+      id: "8",
+      name: "pages"
+    }
+  ]);
+  return (
+    <div className="header__bottom">
+      <nav className="header__bottom-navbar">
+        {pages.map(page => (
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+          <a className="header__bottom-navbar_item" href="#" key={page.id}>
+            {page.name}
+          </a>
+        ))}
+      </nav>
+    </div>
+  );
 };
 
 export default () => {

@@ -60,5 +60,22 @@
     padding: 15px 0;
     background-color: #1e1e1e;
     border-color: $light-color-3;
+
+    &-navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 70%;
+      margin: 0 auto;
+
+      &_item {
+        display: inline-block;
+        padding: 0.15rem;
+        background: #1e1e1e;
+        text-transform: capitalize;
+        color: $light-color;
+      }
+    }
   }
 }

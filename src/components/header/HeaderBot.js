@@ -1,38 +1,47 @@
 import React from "react";
-import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const DEFAULT_PAGES = [
   {
     id: "1",
-    name: "home"
+    name: "home",
+    path: "/home"
   },
   {
     id: "2",
-    name: "about"
+    name: "about",
+    path: "/about"
   },
   {
     id: "3",
-    name: "woman"
+    name: "woman",
+    path: "/woman"
   },
   {
     id: "4",
-    name: "men"
+    name: "men",
+    path: "/men"
   },
   {
     id: "5",
-    name: "accessories"
+    name: "accessories",
+    path: "/accessories"
   },
   {
     id: "6",
-    name: "blog"
+    name: "blog",
+    path: "/blog"
   },
   {
     id: "7",
-    name: "contact"
+    name: "contact",
+    path: "/contact"
   },
   {
     id: "8",
-    name: "pages"
+    name: "pages",
+    path: "/pages"
   }
 ];
 
@@ -47,10 +56,13 @@ export default function HeaderMid(props) {
       <Container>
         <nav className="header__bottom-navbar">
           {pages.map(page => (
-            // eslint-disable-next-line jsx-a11y/anchor-is-valid
-            <a className="header__bottom-navbar_item" href="#" key={page.id}>
+            <Link
+              className="header__bottom-navbar_item"
+              to={page.path}
+              key={page.id}
+            >
               {page.name}
-            </a>
+            </Link>
           ))}
         </nav>
       </Container>

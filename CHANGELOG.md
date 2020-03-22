@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### V0.1.1
+## Release v0.1.1 (03/03/2020)
 
 - Insert the about page
 - Refactoring navbar

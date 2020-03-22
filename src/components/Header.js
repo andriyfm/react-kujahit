@@ -3,12 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
 import SocialMedia from "./SocialMedia";
 import CartAndBalance from "./CartAndBalance";
+import { DrawerContent, DrawerButton } from "./Drawer";
 
 export const Top = props => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDrawer = () => setIsOpen(!isOpen);
+
   return (
     <div className="header__top">
       <Container>
-        <Row className="align-items-center">
+        {/* Desktop */}
+        <Row className="align-items-center d-none d-md-flex">
           <Col md={6}>
             <div className="d-flex justify-content-between justify-content-md-start">
               <div className="mr-5">
@@ -33,7 +38,19 @@ export const Top = props => {
             </div>
           </Col>
         </Row>
+
+        {/* Mobile */}
+        <Row className="align-items-center justify-content-between d-sm-flex d-md-none">
+          <Col>
+            <DrawerButton onClick={toggleDrawer} />
+          </Col>
+          <Col className="text-right">
+            <CartAndBalance />
+          </Col>
+        </Row>
       </Container>
+
+      <DrawerContent isOpen={isOpen} onDrawerClose={toggleDrawer} />
     </div>
   );
 };

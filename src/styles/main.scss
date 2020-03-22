@@ -18,19 +18,23 @@
 
 // Components
 @import "./theme/components/cart-and-balance";
-@import "./theme/components/social-media";
 @import "./theme/components/drawer";
+@import "./theme/components/faq";
+@import "./theme/components/social-media";
+@import "./theme/components/skills";
 
 // Sections
-@import "./theme/header";
-@import "./theme/hero";
 @import "./theme/about";
-@import "./theme/feature-products";
-@import "./theme/product-category";
-@import "./theme/company-info";
 @import "./theme/brands";
+@import "./theme/company-info";
 @import "./theme/cta";
+@import "./theme/sections/faq-and-skills";
+@import "./theme/feature-products";
 @import "./theme/footer";
+@import "./theme/header";
+@import "./theme/heading";
+@import "./theme/hero";
+@import "./theme/product-category";
 
 // Pages
 // .....

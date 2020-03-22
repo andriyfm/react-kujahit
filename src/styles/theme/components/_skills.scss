@@ -1,0 +1,21 @@
+.skills {
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: $light-color-3;
+  }
+
+  &__bar {
+    height: 10px;
+    background-color: #1e1e1e;
+
+    .progress-bar {
+      background-color: $light-color;
+    }
+  }
+}

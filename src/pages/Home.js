@@ -6,13 +6,12 @@ import FeatureProducts from "../components/FeatureProducts";
 import CompanyInfo from "../components/CompanyInfo";
 import Brands from "../components/Brands";
 import ProductCategory from "../components/ProductCategory";
-import HeroStatic from "../components/hero/HeroStatic";
-import HeroSlider from "../components/hero/HeroSlider";
+import { HeroStatic } from "../components/hero";
 
 const Home = props => {
   return (
     <Layout>
-      <HeroSlider />
+      <HeroStatic />
       <About />
       <FeatureProducts />
       <ProductCategory />

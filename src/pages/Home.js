@@ -7,11 +7,12 @@ import CompanyInfo from "../components/CompanyInfo";
 import Brands from "../components/Brands";
 import ProductCategory from "../components/ProductCategory";
 import HeroStatic from "../components/hero/HeroStatic";
+import HeroSlider from "../components/hero/HeroSlider";
 
 const Home = props => {
   return (
     <Layout>
-      <HeroStatic />
+      <HeroSlider />
       <About />
       <FeatureProducts />
       <ProductCategory />

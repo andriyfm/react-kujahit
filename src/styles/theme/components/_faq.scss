@@ -1,0 +1,13 @@
+.faq {
+  &__item {
+    border: solid 1px $light-color-3;
+
+    .card-header {
+      background-color: #1e1e1e;
+    }
+    .card-body {
+      background-color: $dark;
+      color: $light-color-3;
+    }
+  }
+}

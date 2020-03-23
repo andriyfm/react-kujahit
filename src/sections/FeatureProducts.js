@@ -1,7 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { Container, Row, Col } from "react-bootstrap";
-import Rating from "./Rating";
+import Rating from "../components/Rating";
 
 export const SectionHeader = props => {
   return (

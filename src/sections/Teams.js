@@ -44,7 +44,7 @@ export default function Teams(props) {
         <Row>
           {DATA_TEAMS.map(team => {
             return (
-              <Col md={3} key={team.id}>
+              <Col md={3} key={team.id} className="mb-4 mb-md-0">
                 <div className="teams__item">
                   <img
                     className="teams__item-avatar"

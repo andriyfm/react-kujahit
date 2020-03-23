@@ -5,6 +5,7 @@ import SectionCTA from "../sections/Cta";
 import SectionBrands from "../sections/Brands";
 import SectionFaqAndSkills from "../sections/FaqAndSkills";
 import SectionTeam from "../sections/Teams";
+import SectionAbout from "../sections/About";
 
 /**
  * ABOUT PAGE
@@ -13,6 +14,7 @@ import SectionTeam from "../sections/Teams";
 export default function About(props) {
   return (
     <Layout>
+      <SectionAbout />
       <SectionTeam />
       <SectionFaqAndSkills />
       <SectionBrands />

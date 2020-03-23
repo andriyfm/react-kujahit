@@ -7,7 +7,7 @@ const About = props => {
     <section className="about">
       <Container>
         <Row>
-          <Col md={7} className="mb-sm-4">
+          <Col md={7} className="mb-4 mb-md-0">
             <h2 className="about__title">about us</h2>
             <p className="about__text">
               Mollit qui enim aliquip tempor. Commodo ut in excepteur cupidatat

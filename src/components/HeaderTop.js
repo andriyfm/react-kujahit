@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col } from "react-bootstrap";
 
-import SocialMedia from "../SocialMedia";
-import CartAndBalance from "../CartAndBalance";
-import { DrawerContent, DrawerButton } from "../Drawer";
+import SocialMedia from "./SocialMedia";
+import CartAndBalance from "./CartAndBalance";
+import { DrawerContent, DrawerButton } from "./Drawer";
 
 /**
  * HEADER TOP DESKTOP

@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
 
-import CartAndBalance from "../CartAndBalance";
+import CartAndBalance from "./CartAndBalance";
 
 /**
  * SEARCHBAR

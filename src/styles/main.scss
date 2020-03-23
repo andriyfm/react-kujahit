@@ -4,17 +4,12 @@
 // Website: https://github.com/andriyfm
 // ==========================================
 
-// Fonts
+// Base
 @import "./theme/fonts";
-
-// Variables
 @import "./theme/variables";
-
-// Vendor
 @import "./vendor/bootstrap.scss";
-
-// Default
 @import "./theme/default";
+@import "./theme/heading";
 
 // Components
 @import "./theme/components/cart-and-balance";
@@ -25,15 +20,14 @@
 @import "./theme/components/section";
 
 // Sections
-@import "./theme/about";
-@import "./theme/brands";
-@import "./theme/company-info";
-@import "./theme/cta";
+@import "./theme/sections/about";
+@import "./theme/sections/brands";
+@import "./theme/sections/company-info";
+@import "./theme/sections/cta";
 @import "./theme/sections/faq-and-skills";
-@import "./theme/feature-products";
-@import "./theme/footer";
-@import "./theme/header";
-@import "./theme/heading";
-@import "./theme/hero";
-@import "./theme/product-category";
+@import "./theme/sections/feature-products";
+@import "./theme/sections/footer";
+@import "./theme/sections/header";
+@import "./theme/sections/hero";
+@import "./theme/sections/product-category";
 @import "./theme/sections/teams";

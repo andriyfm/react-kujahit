@@ -8,7 +8,7 @@ import SectionFeatureProducts from "../sections/FeatureProducts";
 import SectionCompanyInfo from "../sections/CompanyInfo";
 import SectionBrands from "../sections/Brands";
 import SectionProductCategory from "../sections/ProductCategory";
-import { HeroStatic as SectionHeroStatic } from "../sections/hero";
+import { HeroStatic as SectionHeroStatic } from "../sections/Hero";
 
 const Home = props => {
   return (

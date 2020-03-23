@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
+import { Section } from "../components/Section";
 import SocialMedia from "../components/SocialMedia";
 
 const About = props => {
   return (
-    <section className="about">
+    <Section className="about">
       <Container>
         <Row>
           <Col md={7} className="mb-4 mb-md-0">
@@ -31,7 +33,7 @@ const About = props => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </Section>
   );
 };
 

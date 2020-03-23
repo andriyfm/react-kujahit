@@ -1,0 +1,16 @@
+.section {
+  &__header {
+    margin: 0 0 2.15rem;
+  }
+  &__title {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__description {
+    margin: 0;
+    font-size: 0.9rem;
+    color: $light-color-3;
+  }
+}

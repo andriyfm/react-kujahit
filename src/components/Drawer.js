@@ -24,7 +24,6 @@ export const DrawerCloseButton = ({ onClick }) => {
 };
 
 export const DrawerContent = ({ isOpen, onDrawerClose }) => {
-  console.log({ isOpen, onDrawerClose });
   const open = isOpen ? "open" : "";
   return (
     <section className={`drawer ${open}`}>

@@ -1,23 +1,25 @@
 import React from "react";
+
 import Layout from "../components/Layout";
-import CTA from "../components/Cta";
-import About from "../components/About";
-import FeatureProducts from "../components/FeatureProducts";
-import CompanyInfo from "../components/CompanyInfo";
-import Brands from "../components/Brands";
-import ProductCategory from "../components/ProductCategory";
-import { HeroStatic } from "../components/hero";
+
+import SectionCTA from "../sections/Cta";
+import SectionAbout from "../sections/About";
+import SectionFeatureProducts from "../sections/FeatureProducts";
+import SectionCompanyInfo from "../sections/CompanyInfo";
+import SectionBrands from "../sections/Brands";
+import SectionProductCategory from "../sections/ProductCategory";
+import { HeroStatic as SectionHeroStatic } from "../sections/hero";
 
 const Home = props => {
   return (
     <Layout>
-      <HeroStatic />
-      <About />
-      <FeatureProducts />
-      <ProductCategory />
-      <CompanyInfo />
-      <Brands />
-      <CTA />
+      <SectionHeroStatic />
+      <SectionAbout />
+      <SectionFeatureProducts />
+      <SectionProductCategory />
+      <SectionCompanyInfo />
+      <SectionBrands />
+      <SectionCTA />
     </Layout>
   );
 };

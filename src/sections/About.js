@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../components/SocialMedia";
 
 const About = props => {
   return (

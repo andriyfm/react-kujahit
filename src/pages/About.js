@@ -1,9 +1,10 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import CTA from "../components/Cta";
-import Brands from "../components/Brands";
-import FaqAndSkills from "../components/FaqAndSkills";
+import SectionCTA from "../sections/Cta";
+import SectionBrands from "../sections/Brands";
+import SectionFaqAndSkills from "../sections/FaqAndSkills";
+import SectionTeam from "../sections/Teams";
 
 /**
  * ABOUT PAGE
@@ -12,9 +13,10 @@ import FaqAndSkills from "../components/FaqAndSkills";
 export default function About(props) {
   return (
     <Layout>
-      <FaqAndSkills />
-      <Brands />
-      <CTA />
+      <SectionTeam />
+      <SectionFaqAndSkills />
+      <SectionBrands />
+      <SectionCTA />
     </Layout>
   );
 }

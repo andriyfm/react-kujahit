@@ -18,8 +18,10 @@
 @import "./theme/components/social-media";
 @import "./theme/components/skills";
 @import "./theme/components/section";
+@import "./theme/components/breadcrumbs";
 
 // Sections
+@import "./theme/sections/page-title";
 @import "./theme/sections/about";
 @import "./theme/sections/brands";
 @import "./theme/sections/company-info";

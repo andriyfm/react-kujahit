@@ -1,0 +1,11 @@
+.page-title {
+  padding: 3rem 0;
+
+  @media (max-width: $bp-sm) {
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}

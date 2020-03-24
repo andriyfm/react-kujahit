@@ -1,0 +1,54 @@
+.widget-card {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid $navy-dark;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: $border-radius;
+
+  &__header {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $light-color-3;
+  }
+
+  &__product-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid $navy-dark;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &__thumbnail {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__price {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: $light-color-3;
+    }
+  }
+}

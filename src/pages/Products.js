@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { TwoColumns as Layout } from "../components/Layout";
 
-import Layout from "../components/Layout";
-import SectionPageTitle from "../sections/PageTitle";
-import SectionCTA from "../sections/Cta";
-
+/**
+ * PRODUCTS PAGE
+ * @param {*} props
+ */
 export default props => {
-  const [pageName] = useState("Page Name");
-
   return (
-    <Layout>
-      <SectionPageTitle name={pageName} />
-      <SectionCTA />
+    <Layout pageName="products">
+      <section className="products__banner">Product banner</section>
+      <section className="products__list">Products list</section>
     </Layout>
   );
 };

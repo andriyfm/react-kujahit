@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  */
 export const FooterTop = props => {
   return (
-    <div className="footer__top">
+    <section className="footer__top">
       <Container>
         <Row>
           <Col md={{ span: 6, offset: 3 }} className="text-center">
@@ -26,7 +26,7 @@ export const FooterTop = props => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 
@@ -61,5 +61,15 @@ export const FooterBottom = props => {
         </Row>
       </Container>
     </section>
+  );
+};
+
+export default props => {
+  return (
+    <footer>
+      {props.children}
+      <FooterTop />
+      <FooterBottom />
+    </footer>
   );
 };

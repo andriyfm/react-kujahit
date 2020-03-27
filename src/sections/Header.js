@@ -1,8 +1,8 @@
 import React from "react";
 
-import HeaderTop from "./header/HeaderTop";
-import HeaderMid from "./header/HeaderMid";
-import HeaderBot from "./header/HeaderBot";
+import HeaderTop from "../components/HeaderTop";
+import HeaderMid from "../components/HeaderMid";
+import HeaderBot from "../components/HeaderBot";
 
 export default () => {
   return (

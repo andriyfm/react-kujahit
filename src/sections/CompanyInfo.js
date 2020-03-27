@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../components/SocialMedia";
 
 export const Services = props => {
   return (

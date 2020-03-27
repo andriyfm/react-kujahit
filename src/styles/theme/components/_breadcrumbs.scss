@@ -1,0 +1,29 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: $bp-sm) {
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 0.5rem;
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: $light-color-2;
+
+    &.active {
+      color: $light-color-3;
+    }
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+    font-size: 0.65rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const DEFAULT_PAGES = [
   {
@@ -16,7 +16,7 @@ const DEFAULT_PAGES = [
   {
     id: "3",
     name: "woman",
-    path: "/woman"
+    path: "/products/woman"
   },
   {
     id: "4",

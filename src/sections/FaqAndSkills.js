@@ -104,7 +104,7 @@ export default function FaqAndSkills(porps) {
     <section className="faq-and-skills">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col md={6} className="mb-5 mb-md-0">
             <Faq />
           </Col>
           <Col md={6}>

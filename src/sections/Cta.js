@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
+import { Section } from "../components/Section";
+
 const CTA = props => {
   return (
-    <section className="cta">
+    <Section className="cta">
       <Container>
         <Row className="align-items-center">
           <Col lg={9} md={8}>
@@ -23,7 +25,7 @@ const CTA = props => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </Section>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import { TwoColumns as Layout } from "../components/Layout";
 
 import ProductBanner from "../sections/ProductBanner";
+import ProductList from "../sections/ProductList";
 
 /**
  * PRODUCTS PAGE
@@ -11,7 +12,7 @@ export default props => {
   return (
     <Layout pageName="products">
       <ProductBanner />
-      <section className="products__list">Products list</section>
+      <ProductList />
     </Layout>
   );
 };

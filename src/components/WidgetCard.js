@@ -36,10 +36,10 @@ export default props => {
               src={el.thumbnail}
               alt="product-thumbnail"
             />
-            <div className="ml-3">
+            <div>
+              <Rating amount={el.rating} />
               <h4 className="widget-card__product-item__title">{el.title}</h4>
               <h4 className="widget-card__product-item__price">${el.price}</h4>
-              <Rating amount={el.rating} />
             </div>
           </div>
         ))}

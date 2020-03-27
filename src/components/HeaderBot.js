@@ -16,7 +16,7 @@ const DEFAULT_PAGES = [
   {
     id: "3",
     name: "woman",
-    path: "/woman"
+    path: "/products/woman"
   },
   {
     id: "4",

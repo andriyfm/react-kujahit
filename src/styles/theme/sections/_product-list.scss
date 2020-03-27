@@ -1,0 +1,82 @@
+.product-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  overflow: hidden;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+
+  &__item {
+    &-header {
+      position: relative;
+    }
+    &-thumbnail {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+    &-price {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 50px;
+      padding: 0.3rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+      background-color: $dark;
+      color: $light-color-3;
+      border-radius: $border-radius;
+      box-shadow: 0 0 10px 2px #00000088;
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    &-name {
+      font-weight: bold;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      @media (min-width: $bp-xs) {
+        width: 80%;
+      }
+      @media (min-width: $bp-lg) {
+        width: 60%;
+      }
+    }
+    &-desc {
+      font-size: 0.8rem;
+      color: $light-color-3;
+      height: 38px;
+      overflow: hidden;
+      display: none;
+
+      @media (min-width: $bp-lg) {
+        display: block;
+      }
+    }
+    &-footer {
+      margin-top: 1rem;
+    }
+    &-cartbtn {
+      font-weight: bold;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      border: 1px solid #1e1e1e;
+      color: $light-color-3;
+      background-color: #1e1e1e;
+
+      @media (min-width: $bp-lg) {
+        width: 100%;
+      }
+    }
+  }
+}

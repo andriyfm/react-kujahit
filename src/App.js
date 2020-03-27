@@ -17,6 +17,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 // Import Pages
 import About from "./pages/About";
+import Products from "./pages/Products";
 
 // Initialize font awesome 5
 library.add(fab, fas);
@@ -44,6 +45,12 @@ class App extends React.Component {
           <Switch>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/products/:category">
+              <Products />
+            </Route>
+            <Route path="/products">
+              <Products />
             </Route>
             <Route path="/">
               <Home />

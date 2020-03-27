@@ -1,0 +1,23 @@
+.pagination-products {
+  margin: 2rem 0;
+  justify-content: center;
+
+  @media (min-width: $bp-md) {
+    justify-content: left;
+  }
+
+  .page-item.active .page-link {
+    background-color: $light-color-3;
+    color: white;
+    border-color: $navy-dark;
+  }
+
+  .page-link {
+    background-color: #1e1e1e;
+    border-color: $navy-dark;
+
+    &:hover {
+      background-color: $navy-dark;
+    }
+  }
+}

@@ -18,8 +18,11 @@
 @import "./theme/components/social-media";
 @import "./theme/components/skills";
 @import "./theme/components/section";
+@import "./theme/components/breadcrumbs";
+@import "./theme/components/widget-card";
 
 // Sections
+@import "./theme/sections/page-title";
 @import "./theme/sections/about";
 @import "./theme/sections/brands";
 @import "./theme/sections/company-info";
@@ -31,3 +34,6 @@
 @import "./theme/sections/hero";
 @import "./theme/sections/product-category";
 @import "./theme/sections/teams";
+@import "./theme/sections/product-banner";
+@import "./theme/sections/product-list";
+@import "./theme/sections/pagination";
